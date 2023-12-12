@@ -2,8 +2,8 @@
 
 public class Customer
 {
-    public Guid Id { get; init; } = Guid.NewGuid();
-
+    public CustomerId Id { get; init; } = new();
+    
     public string Email { get; private set; } = string.Empty;
 
     public string Name { get; private set; } = string.Empty;

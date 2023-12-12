@@ -12,14 +12,15 @@ public class Order
         
     }
 
-    public Guid Id { get; init; }
+    public OrderId Id { get; init; }
 
-    public Guid CustomerId { get; private set; }
+    public CustomerId CustomerId { get; private set; }
 
     public static Order Create(Customer customer)
     {
         var order = new Order
         {
+            Id = new OrderId(),
             CustomerId = customer.Id
         };
 

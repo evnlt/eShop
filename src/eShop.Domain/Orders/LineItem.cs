@@ -4,18 +4,19 @@ namespace eShop.Domain.Orders;
 
 internal class LineItem
 {
-    public LineItem(Guid orderId, Guid productId, Price price)
+    public LineItem(OrderId orderId, ProductId productId, Price price)
     {
+        Id = new LineItemId();
         OrderId = orderId;
         ProductId = productId;
         Price = price;
     }
-    
-    public Guid Id { get; init; } = Guid.NewGuid();
 
-    public Guid OrderId { get; private set; }
+    public LineItemId Id { get; init; } 
 
-    public Guid ProductId { get; private set; }
+    public OrderId OrderId { get; private set; }
+
+    public ProductId ProductId { get; private set; }
 
     public Price Price { get; private set; }
 }
