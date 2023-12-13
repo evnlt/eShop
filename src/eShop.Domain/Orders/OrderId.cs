@@ -1,6 +1,6 @@
 ﻿namespace eShop.Domain.Orders;
 
-public record OrderId
+public record struct OrderId()
 {
     public Guid Value { get; init; } = Guid.NewGuid();
 }
