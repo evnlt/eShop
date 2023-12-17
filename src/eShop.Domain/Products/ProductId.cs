@@ -1,6 +1,11 @@
 ﻿namespace eShop.Domain.Products;
 
-public record struct ProductId()
+public record struct ProductId
 {
-    public Guid Value { get; init; } = Guid.NewGuid();
+    public Guid Value { get; init; }
+
+    public ProductId(Guid value)
+    {
+        Value = value;
+    }
 }

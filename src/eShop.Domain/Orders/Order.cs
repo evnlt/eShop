@@ -18,6 +18,8 @@ public class Order
 
     public OrderStatus Status { get; private set; }
 
+    public IReadOnlyList<LineItem> LineItems => _lineItems.ToList();
+
     public static Order Create(Customer customer)
     {
         var order = new Order

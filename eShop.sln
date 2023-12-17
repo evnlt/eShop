@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Domain", "src\eShop.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Application", "src\eShop.Application\eShop.Application.csproj", "{07820B00-913B-464D-ADEE-5611F1693003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Persistance", "src\eShop.Persistance\eShop.Persistance.csproj", "{DD7964A6-8F50-48E2-98BF-32F995458CB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Persistence", "src\eShop.Persistence\eShop.Persistence.csproj", "{DD7964A6-8F50-48E2-98BF-32F995458CB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Web.API", "src\eShop.Web.API\eShop.Web.API.csproj", "{D9C71F8A-11C7-4405-828C-8934A6270367}"
 EndProject

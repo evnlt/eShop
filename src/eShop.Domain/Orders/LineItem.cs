@@ -2,7 +2,7 @@
 
 namespace eShop.Domain.Orders;
 
-internal class LineItem
+public class LineItem
 {
     public LineItem(OrderId orderId, ProductId productId, Price price)
     {
