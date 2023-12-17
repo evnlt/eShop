@@ -16,12 +16,15 @@ public class Order
 
     public CustomerId CustomerId { get; private set; }
 
+    public OrderStatus Status { get; private set; }
+
     public static Order Create(Customer customer)
     {
         var order = new Order
         {
             Id = new OrderId(),
-            CustomerId = customer.Id
+            CustomerId = customer.Id,
+            Status = OrderStatus.Pending
         };
 
         return order;
