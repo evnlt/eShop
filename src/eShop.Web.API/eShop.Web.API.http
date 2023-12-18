@@ -1,6 +1,6 @@
-[eShop.Web.API_HostAddress] : http://localhost:5222
+@host = http://localhost:5222
 
-GET {{eShop.Web.API_HostAddress}}/weatherforecast/
+GET {{host}}/weatherforecast/
 Accept: application/json
 
 ###
